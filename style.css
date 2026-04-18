@@ -112,8 +112,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    justify-content: center;
-    align-items: center;
+    flex: content;
 }
 .sides{
     flex-direction: column;
@@ -131,7 +130,7 @@ body{
      width: 100%;
 }
 .logo{
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 .name{
