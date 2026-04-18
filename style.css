@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    
+  
+}
+@font-face {
+    font-family: 'poppins';
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.logo{
+  display: flex;
+  width: 15%;
+  height: auto;
+}
+.sides{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.left{
+    display: flex;
+    width: 50%; =
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px;
+  
+}
+.mainimage{
+    display: flex;
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+p{
+    color: white;
+}
+.name{
+
+    font-size: 2.5rem;
+     font-family: 'Poppins';
+     padding-left: 10%;
+    padding-right: 20%;
+    font-weight: 600;
+}
+.inside{
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+  padding-left: 10%;
+    padding-right: 20%;
+    font-weight: 400;
+}
+.botao{
+    display: flex;
+     font-family: 'Poppins';
+    font-size: 1rem;
+    margin-left: 10%;
+    font-weight: 300;
+    color: hsl(257, 40%, 49%);
+    background: white;
+    width: 220px;
+    height: 60px;
+   justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    font-weight: 600;
+    box-shadow: 5px 3px 24px rgb(54, 54, 54);
+
+}
+.botao:hover{
+    background: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+body{
+ background-image: url("./images/bg-mobile.svg");
+     flex-wrap: wrap;
+     background-size: contain;
+     background-position: top;
+     padding: 0px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.sides{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.left {
+      width: 100%;
+}
+.right{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+     width: 100%;
+}
+.logo{
+  width: 40%;
+  height: auto;
+}
+.name{
+    width: 100%;
+    padding: 0px;
+}
+.inside{
+      width: 100%;
+    padding: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.botao{
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+}
